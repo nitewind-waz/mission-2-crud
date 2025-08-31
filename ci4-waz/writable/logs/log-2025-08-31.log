@@ -1,0 +1,470 @@
+ERROR - 2025-08-31 04:20:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'mahasiswa', 3306, '', 0)
+#1 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\app\Controllers\Pages.php(49): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#4 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Pages->listMahasiswaDB()
+#5 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#6 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#8 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\POLBAN\\Semes...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\app\Controllers\Pages.php(49): CodeIgniter\Database\BaseConnection->query('SELECT * FROM b...')
+#3 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Pages->listMahasiswaDB()
+#4 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#5 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#7 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#8 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#9 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\POLBAN\\Semes...')
+#10 {main}
+CRITICAL - 2025-08-31 04:20:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: listmahasiswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Controllers\Pages.php(49): CodeIgniter\Database\BaseConnection->query('SELECT * FROM biodata')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->listMahasiswaDB()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:20:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:22:05 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:22:30 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:22:31 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:22:32 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:22:37 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:23:43 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:23:45 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:24:35 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:25:11 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:25:23 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "<"
+[Method: GET, Route: edit/%3C]
+in SYSTEMPATH\Router\Router.php on line 741.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('edit/<')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('edit/<')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:25:32 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:30:21 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:31:16 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:31:18 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:31:20 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:31:29 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:32:01 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:32:03 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:32:04 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:32:22 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: GET, Route: edit/241511001]
+in APPPATH\Controllers\Pages.php on line 68.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->editMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 04:33:44 --> Error: Class "App\Controllers\MahasiswaModel" not found
+[Method: POST, Route: updateMahasiswa/241511001]
+in APPPATH\Controllers\Pages.php on line 77.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->updateMahasiswa('241511001')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+ERROR - 2025-08-31 05:03:12 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bi...', 0)
+#1 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bi...')
+#2 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bi...')
+#3 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bi...', Array, false)
+#4 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\app\Controllers\Pages.php(82): CodeIgniter\Model->insert(Array)
+#8 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+#9 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\POLBAN\\Semes...')
+#15 {main}
+CRITICAL - 2025-08-31 05:03:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+[Method: POST, Route: saveMahasiswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 05:03:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 05:03:12 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+ERROR - 2025-08-31 05:03:46 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bi...', 0)
+#1 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bi...')
+#2 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bi...')
+#3 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bi...', Array, false)
+#4 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\app\Controllers\Pages.php(82): CodeIgniter\Model->insert(Array)
+#8 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+#9 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\POLBAN\\Semes...')
+#15 {main}
+CRITICAL - 2025-08-31 05:03:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+[Method: POST, Route: saveMahasiswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 05:03:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 05:03:46 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Farras Fadhil\', \'L\', \'2005-01-26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+ERROR - 2025-08-31 05:04:11 --> mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY' in D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `bi...', 0)
+#1 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `bi...')
+#2 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `bi...')
+#3 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `bi...', Array, false)
+#4 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\BaseModel.php(838): CodeIgniter\Model->doInsert(Array)
+#6 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Model.php(797): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\app\Controllers\Pages.php(82): CodeIgniter\Model->insert(Array)
+#8 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+#9 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+#10 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\POLBAN\Semester 3\PROJEK3\mission-2\mission-2-fawwaz\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('D:\\POLBAN\\Semes...')
+#15 {main}
+CRITICAL - 2025-08-31 05:04:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+[Method: POST, Route: saveMahasiswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 05:04:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Ayam Jago\', \'L\', \'2005-01-26\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Ayam Jago\', \'L\', \'2005-01-26\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
+CRITICAL - 2025-08-31 05:04:11 --> [Caused by] mysqli_sql_exception: Duplicate entry '' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Ayam Jago\', \'L\', \'2005-01-26\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Ayam Jago\', \'L\', \'2005-01-26\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (\'Ayam Jago\', \'L\', \'2005-01-26\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `biodata` (`nama_lengkap`, `jenis_kelamin`, `tanggal_lahir`) VALUES (:nama_lengkap:, :jenis_kelamin:, :tanggal_lahir:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(838): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(797): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Pages.php(82): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Pages->saveMahasiswa()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('D:\\POLBAN\\Semester 3\\PROJEK3\\mission-2\\mission-2-fawwaz\\public\\index.php')
